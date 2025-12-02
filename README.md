@@ -76,5 +76,5 @@ The script generates two distinct Excel reports:
 
 ---
 
-### 📈 Business Impact
+### Business Impact
 This automation reduces manual data cleaning time by approximately **90%**. The analyst can now focus solely on the **Yellow** (ambiguous) and **Red** (high risk) entries, while the **Green** entries are processed with high confidence.
