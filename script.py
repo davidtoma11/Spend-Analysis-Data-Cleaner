@@ -204,5 +204,3 @@ styler2 = styler2.format({'FINAL_SCORE': "{:.1f}"})
 styler2.to_excel(FILE_2, index=False, engine='openpyxl')
 
 print(f"   -> saved: {FILE_2}")
-print("   -> bonuses applied: +5 Country, +3 Region, +1 City")
-print("   -> file 2 logic: yellow applied only for close gaps (<= 10)")
