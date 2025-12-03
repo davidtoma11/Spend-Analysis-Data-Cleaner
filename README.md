@@ -32,6 +32,17 @@ To determine the final winner, the algorithm analyzes the "Gap" between the top 
 * 🟡 **YELLOW (Close Call):** Multiple valid candidates exist with very close scores (gap <= 10 points). **All are retained for manual review.**
 * 🔴 **RED (Forced Match):** No valid candidates found. The "best of the worst" is selected to preserve the spend record, but marked as high risk.
 
+
+#### 4. Human verify (10-minutes fix)
+While the algorithm automated the heavy lifting, the **"Yellow"** candidates (close calls) required a final human decision. Instead of a time-consuming deep dive, I applied a rapid validation strategy.
+
+* **The Strategy:** I performed a visual scan focusing on a single, high-precision attribute: the **Postcode**.
+* **The Decision:** In cases where names were similar but scores were close, if the **Postcode** matched, the candidate was immediately validated as the correct entity.
+* **Efficiency:** Because the list was already filtered and color-coded, this manual verification took **less than 10 minutes** for the entire dataset.
+
+The dataset is now ~95% resolved. The Data Analyst only has a few final checks to perform:
+1.  Review the **"Red"** (Forced Match) rows to decide if they should be kept or deleted.
+2.  The **"Green"** and resolved **"Yellow"** rows are considered final and ready for Spend Analysis.
 ---
 
 ### Output Files
