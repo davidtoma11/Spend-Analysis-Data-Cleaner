@@ -49,11 +49,11 @@ The dataset is now ~95% resolved. The Data Analyst only has a few final checks t
 
 The script generates two distinct Excel reports:
 
-**1. Audit View (`file_1`)**
+**1. Audit View (`filtred_data_colored`)**
 * **Purpose:** Full transparency.
 * **Content:** Shows all 5 candidates per company with detailed color coding (Green/LightGreen/Red). No rows are hidden.
 
-**2. Executive List (`file_2`)**
+**2. Executive List (`filtred_data`)**
 * **Purpose:** Actionable, clean data (One row per company).
 * **Logic:**
     * **Dark Green:** Clear winners.
@@ -72,7 +72,7 @@ The script generates two distinct Excel reports:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/supplier-entity-resolution-poc.git](https://github.com/your-username/supplier-entity-resolution-poc.git)
+    git clone https://github.com/davidtoma11/Spend-Analysis-Data-Cleaner.git
     ```
 
 2.  **Install dependencies:**
